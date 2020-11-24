@@ -22,7 +22,7 @@ describe('NavBar', () => {
 
   describe('navlinks', () => {
 
-     it('renders a Home <NavLink>', () => {
+    it('renders a Home <NavLink>', () => {
       const navLink = wrapper.findWhere(n => n.props().to === '/')
       expect(navLink.childAt(0).text()).to.equal('Home');
       expect(navLink.props().to).to.equal('/');
